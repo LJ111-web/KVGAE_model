@@ -46,32 +46,33 @@ adata = read_10X_Visium(
 
 runner = RunAnalysis(save_path=save_path, pre_epochs=1000, epochs=600, use_gpu=True)
 
-#Crop histological section
+Crop histological section
 adata = runner.crop_image(adata, data_name="human_breast", crop_size=50, target_size=224)
 
-#Feature extraction from images
+Feature extraction from images
 adata = runner.extract_image_features(adata, cnn_type="MaxVit", pca_components=50)
 
-#Data augmentation
+Data augmentation
 adata = runner.augment_adata(adata)
 
-#PCA dimensionality reduction
+PCA dimensionality reduction
 data = runner.data_process(adata, pca_n_comps=200)
 
-#Graph construction
+Graph construction
 graph_dict = runner.build_graph(adata, k=8, rad_cutoff=150)
 
-#Model construction
+Model construction
 model = runner.build_model(input_dim=data.shape[1])
 
-#Model training
+Model training
 trainer = runner.train_model(data, graph_dict, model)
 trainer.fit()
 
 emb, _ = trainer.process()
 adata.obsm["emb"] = emb
 
-#Clustering
+Clustering
 adata = runner.get_cluster_data(adata, n_domains=n_domains, priori=True)
 
 sc.pl.spatial(adata, color='refine spatial domain',  spot_size=150)
+```
