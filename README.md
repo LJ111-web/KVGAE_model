@@ -10,7 +10,7 @@ anndata == 0.8.0
 numpy == 1.22.3
 ```
 
-##dataset
+## Dataset
 ```bash
 (1) Human DLPFCs within the spatialLIBD at http://research.libd.org/spatialLIBD/
 (2) Human breast cancer dataset at https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_web_summary.html
@@ -26,7 +26,7 @@ from RUN import RunAnalysis
 import scanpy as sc
 ```
 
-# 定义数据路径
+定义数据路径
 path = "/root/lijie/dataset/human breast/human breast datast"  # 替换为实际路径
 count_file = "V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.h5"
 image_path = path + "/spatial/tissue_hires_image.png"  # 使用高分辨率图像
