@@ -1,4 +1,6 @@
-## Requirements
+#KVGAE: A variational graph autoencoder integratiing attention and fourier-kan structures reveals heterogeneity in spatial transccriptomics
+
+## Installation
 
 ```bash
 python == 3.9
@@ -8,7 +10,6 @@ anndata == 0.8.0
 numpy == 1.22.3
 
 
-## Dataset
 
 ```bash
 (1) Human DLPFCs within the spatialLIBD at http://research.libd.org/spatialLIBD/
