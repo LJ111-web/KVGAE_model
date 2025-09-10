@@ -24,12 +24,12 @@ numpy == 1.22.3
 ```bash
 from RUN import RunAnalysis
 import scanpy as sc
-```
+
 
 定义数据路径
-path = "/root/lijie/dataset/human breast/human breast datast"  # 替换为实际路径
+path = "/root/lijie/dataset/human breast/human breast datast"  # Replace with the actual path
 count_file = "V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.h5"
-image_path = path + "/spatial/tissue_hires_image.png"  # 使用高分辨率图像
+image_path = path + "/spatial/tissue_hires_image.png"  
 
 
 save_path = "../result"
