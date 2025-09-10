@@ -8,9 +8,9 @@ torch == 1.13.0
 scanpy == 1.9.2
 anndata == 0.8.0
 numpy == 1.22.3
+```
 
-
-
+##dataset
 ```bash
 (1) Human DLPFCs within the spatialLIBD at http://research.libd.org/spatialLIBD/
 (2) Human breast cancer dataset at https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_web_summary.html
@@ -18,14 +18,13 @@ numpy == 1.22.3
 (4) Mouse brain tissue datasets from the 10× Genomics database, including sagittal anterior, sagittal posterior, and coronal sections of adult mouse brain, are available at https://www.10xgenomics.com/
 (5) Mouse somatosensory cortex data obtained using the osmFISH platform at http://linnarssonlab.org/osmFISH/
 (6) Mouse visual cortex data generated using the STARmap platform is available at https://singlecell.broadinstitute.org/single_cell/study/SCP815
-
+```
 
 ## Run
-
-```python
+```bash
 from RUN import RunAnalysis
 import scanpy as sc
-
+```
 
 # 定义数据路径
 path = "/root/lijie/dataset/human breast/human breast datast"  # 替换为实际路径
