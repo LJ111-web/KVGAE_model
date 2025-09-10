@@ -1,4 +1,4 @@
-# KVGAE: A variational graph autoencoder integratiing attention and fourier-kan structures reveals heterogeneity in spatial transccriptomics
+# KVGAE: A variational graph autoencoder integratiing attention and Fourier-Kan structures reveals heterogeneity in spatial transccriptomics
 
 ## Installation
 
